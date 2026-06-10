@@ -5,9 +5,9 @@ import AnalyticsRSCProvider from '@/layout/AnalyticsRSCProvider';
 import AuthProvider from '@/layout/AuthProvider';
 import NextThemeProvider from '@/layout/GlobalProvider/NextThemeProvider';
 import StyleRegistry from '@/layout/GlobalProvider/StyleRegistry';
-import { getServerFeatureFlagsStateFromRuntimeConfig } from '@/server/featureFlags';
-import { getServerAuthConfig } from '@/server/globalConfig/getServerAuthConfig';
 import { RouteVariants } from '@/utils/server/routeVariants';
+import { getServerFeatureFlagsStateFromRuntimeConfig } from '~server/featureFlags';
+import { getServerAuthConfig } from '~server/globalConfig/getServerAuthConfig';
 
 import AuthLocale from './AuthLocale';
 import { AuthServerConfigProvider } from './AuthServerConfigProvider';

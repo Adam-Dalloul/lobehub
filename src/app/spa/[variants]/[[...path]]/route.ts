@@ -9,15 +9,15 @@ import { appEnv } from '@/envs/app';
 import { fileEnv } from '@/envs/file';
 import { pythonEnv } from '@/envs/python';
 import { type Locales } from '@/locales/resources';
-import { getServerGlobalConfig } from '@/server/globalConfig';
 import { translation } from '@/server/translation';
-import { serializeForHtml } from '@/server/utils/serializeForHtml';
 import {
   type AnalyticsConfig,
   type SPAClientEnv,
   type SPAServerConfig,
 } from '@/types/spaServerConfig';
 import { RouteVariants } from '@/utils/server/routeVariants';
+import { getServerGlobalConfig } from '~server/globalConfig';
+import { serializeForHtml } from '~server/utils/serializeForHtml';
 
 export function generateStaticParams() {
   const mobileOptions = isDesktop ? [false] : [true, false];

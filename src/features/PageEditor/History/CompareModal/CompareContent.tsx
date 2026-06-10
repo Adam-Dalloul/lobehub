@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 import type {
   DocumentHistoryListItem,
   DocumentHistorySaveSource,
-} from '@/server/routers/lambda/_schema/documentHistory';
+} from '~server/routers/lambda/_schema/documentHistory';
 
 import DocumentHistoryDiff from '../DocumentHistoryDiff';
 import { formatHistoryAbsoluteTime } from '../formatHistoryDate';

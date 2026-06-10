@@ -4,10 +4,11 @@ import { deliverWebhook, HookDispatcher } from '../HookDispatcher';
 import type { AgentHook, AgentHookEvent } from '../types';
 
 // Mock isQueueAgentRuntimeEnabled to control local vs production mode
-vi.mock('@/server/services/queue/impls', () => ({
+vi.mock('~server/services/queue/impls', () => ({
   isQueueAgentRuntimeEnabled: vi.fn(() => false), // Default: local mode
 }));
 
+<<<<<<< HEAD
 const mockPublishJSON = vi.hoisted(() => vi.fn());
 
 // Plain class (not vi.fn) so the file-level `vi.restoreAllMocks()` can't wipe
@@ -19,6 +20,11 @@ vi.mock('@upstash/qstash', () => ({
 }));
 
 const { isQueueAgentRuntimeEnabled } = await import('@/server/services/queue/impls');
+||||||| parent of 4aebccc9e0 (♻️ refactor: introduce ~server alias for apps/server imports)
+const { isQueueAgentRuntimeEnabled } = await import('@/server/services/queue/impls');
+=======
+const { isQueueAgentRuntimeEnabled } = await import('~server/services/queue/impls');
+>>>>>>> 4aebccc9e0 (♻️ refactor: introduce ~server alias for apps/server imports)
 
 describe('HookDispatcher', () => {
   let dispatcher: HookDispatcher;

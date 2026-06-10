@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 
 import { authEnv } from '@/envs/auth';
 import { defaultClients } from '@/libs/oidc-provider/config';
-import { OIDCService } from '@/server/services/oidc';
+import { OIDCService } from '~server/services/oidc';
 
 import ConsentClientError from './ClientError';
 import Consent from './Consent';

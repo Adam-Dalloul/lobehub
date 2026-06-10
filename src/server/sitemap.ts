@@ -10,9 +10,9 @@ import { DEFAULT_LANG } from '@/const/locale';
 import { SITEMAP_BASE_URL } from '@/const/url';
 import { type Locales } from '@/locales/resources';
 import { locales as allLocales } from '@/locales/resources';
-import { DiscoverService } from '@/server/services/discover';
-import { getCanonicalUrl } from '@/server/utils/url';
 import { isDev } from '@/utils/env';
+import { DiscoverService } from '~server/services/discover';
+import { getCanonicalUrl } from '~server/utils/url';
 
 export interface SitemapItem {
   alternates?: {

@@ -1,8 +1,8 @@
 // @vitest-environment node
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import type { DiscoverService } from '@/server/services/discover';
-import { getCanonicalUrl } from '@/server/utils/url';
+import type { DiscoverService } from '~server/services/discover';
+import { getCanonicalUrl } from '~server/utils/url';
 
 import { LAST_MODIFIED, Sitemap, SitemapType } from './sitemap';
 

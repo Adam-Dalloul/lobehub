@@ -11,7 +11,7 @@ import {
   VerifyExecutorService,
   VerifyFeedbackService,
   VerifyPlanGeneratorService,
-} from '@/server/services/verify';
+} from '~server/services/verify';
 
 const verifierTypeSchema = z.enum(['program', 'agent', 'llm']);
 const onFailSchema = z.enum(['manual', 'auto_repair']);

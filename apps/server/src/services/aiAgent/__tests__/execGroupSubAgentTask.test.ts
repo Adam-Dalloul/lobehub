@@ -50,7 +50,7 @@ vi.mock('@/database/models/topic', () => ({
 }));
 
 // Mock AgentService
-vi.mock('@/server/services/agent', () => ({
+vi.mock('~server/services/agent', () => ({
   AgentService: vi.fn().mockImplementation(() => ({
     getAgentConfig: vi.fn().mockResolvedValue({
       chatConfig: {},
@@ -63,7 +63,7 @@ vi.mock('@/server/services/agent', () => ({
 }));
 
 // Mock AgentRuntimeService
-vi.mock('@/server/services/agentRuntime', () => ({
+vi.mock('~server/services/agentRuntime', () => ({
   AgentRuntimeService: vi.fn().mockImplementation(() => ({
     createOperation: vi.fn().mockResolvedValue({
       autoStarted: true,
@@ -75,20 +75,20 @@ vi.mock('@/server/services/agentRuntime', () => ({
 }));
 
 // Mock MarketService
-vi.mock('@/server/services/market', () => ({
+vi.mock('~server/services/market', () => ({
   MarketService: vi.fn().mockImplementation(() => ({
     getLobehubSkillManifests: vi.fn().mockResolvedValue([]),
   })),
 }));
 
 // Mock KlavisService
-vi.mock('@/server/services/klavis', () => ({
+vi.mock('~server/services/klavis', () => ({
   KlavisService: vi.fn().mockImplementation(() => ({
     getKlavisManifests: vi.fn().mockResolvedValue([]),
   })),
 }));
 
-vi.mock('@/server/modules/ModelRuntime', () => ({
+vi.mock('~server/modules/ModelRuntime', () => ({
   initModelRuntimeFromDB: vi.fn(),
 }));
 
