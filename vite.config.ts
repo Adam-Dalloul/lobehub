@@ -319,6 +319,7 @@ export default defineConfig({
       '/api': apiTarget,
       '/f': apiTarget,
       '/market': apiTarget,
+      '/oauth': apiTarget,
       '/oidc': apiTarget,
       '/trpc': apiTarget,
       '/webapi': apiTarget,
