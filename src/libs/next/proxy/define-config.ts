@@ -197,6 +197,9 @@ export function defineConfig() {
     '/oidc/handoff',
     '/oidc/device/auth',
     '/oidc/token',
+    // Interaction details for the consent/login page — must be reachable
+    // before the user has a session, so it cannot be session-gated.
+    '/oidc/interaction/(.*)',
     // market
     '/market-auth-callback',
     // public share pages
